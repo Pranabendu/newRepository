@@ -1,0 +1,3 @@
+2023-04-26 15:05:20,721 error is there Log4J.Report_In_reportFolder 
+2023-04-26 15:05:20,721 warning is there Log4J.Report_In_reportFolder 
+2023-04-26 15:05:20,721 some information is there Log4J.Report_In_reportFolder 
