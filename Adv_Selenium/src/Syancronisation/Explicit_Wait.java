@@ -25,11 +25,10 @@ public class Explicit_Wait {
 		
 		driver.findElement(By.xpath("//a[contains(.,'Signout ')]")).click();
 		
-//		WebDriverWait wait = new WebDriverWait(driver, 10);
-//		wait.until(ExpectedConditions.titleContains("My account"));
-		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.titleContains("classified"));
+		wait.until(ExpectedConditions.titleContains("My account"));
+		
+		
 		
 		String t = driver.getTitle();
 		System.out.println(t);

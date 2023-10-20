@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class Sample3 {
 	
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	void ansim() {
 		System.setProperty("webdriver.gecko.driver","./softwares/geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();

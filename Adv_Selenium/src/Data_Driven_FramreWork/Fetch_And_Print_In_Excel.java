@@ -27,7 +27,7 @@ public class Fetch_And_Print_In_Excel {
 		
 		List<WebElement> links = driver.findElements(By.xpath("//a"));
 		
-		FileInputStream f1 = new FileInputStream("./excel/Amazon_Link_Book.xlsx");
+		FileInputStream f1 = new FileInputStream("./excel/EmptyBook.xlsx");
 		
 		Workbook book = WorkbookFactory.create(f1);
 		
@@ -46,7 +46,7 @@ public class Fetch_And_Print_In_Excel {
 		}
 		
 		// For flash the data into the particular excel file
-		FileOutputStream f2 = new FileOutputStream("./excel/Amazon_Link_Book.xlsx");
+		FileOutputStream f2 = new FileOutputStream("./excel/EmptyBook.xlsx");
 		book.write(f2);
 		
 //		// For print all output in console

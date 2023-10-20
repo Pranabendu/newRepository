@@ -16,7 +16,7 @@ public class Sample {
 		driver.get("file:///D:/Selenium_html/Demo%20sites%20for%20frame/first.html");
 		Thread.sleep(2000);
 		
-		// controler in main/default page
+		// Controller in main/default page
 		WebElement un_main = driver.findElement(By.xpath("//input[@id='aa']"));
 		un_main.sendKeys("Pranabendu");
 		Thread.sleep(2000);
@@ -38,7 +38,7 @@ public class Sample {
 		cframe_adrs.sendKeys("Kolkata");
 		Thread.sleep(2000);
 		
-		// comming back to parent frame
+		// Coming back to parent frame
 		driver.switchTo().parentFrame();
 		pframe_pwd.sendKeys(Keys.CONTROL+"A");
 		Thread.sleep(2000);
@@ -47,7 +47,7 @@ public class Sample {
 		pframe_pwd.sendKeys("nano123");
 		Thread.sleep(2000);
 		
-		// comming back from parent frame to default/main page
+		// Coming back from parent frame to default/main page
 		driver.switchTo().parentFrame();
 		un_main.sendKeys(Keys.CONTROL+"A");
 		Thread.sleep(2000);

@@ -12,13 +12,13 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Excel_Functions {
 	
-	String oparetion(String s,int r,int c) throws EncryptedDocumentException, IOException {
+	public static String oparetion(int r,int c) throws EncryptedDocumentException, IOException {
 		
 		FileInputStream f1 = new FileInputStream("./excel/Book1.xlsx");
 		
 		Workbook book = WorkbookFactory.create(f1);
 		
-		Sheet sheet = book.getSheet(s);
+		Sheet sheet = book.getSheet("Sheet1");
 		
 		Row row = sheet.getRow(r);
 		

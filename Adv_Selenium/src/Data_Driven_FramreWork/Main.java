@@ -11,8 +11,8 @@ public class Main {
 
 	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException {
 		Excel_Functions e1 = new Excel_Functions();
-		String un = e1.oparetion("Sheet1", 6, 0);
-		String pwd = e1.oparetion("Sheet1", 6, 1);
+		String un = e1.oparetion(6, 0);
+		String pwd = e1.oparetion(6, 1);
 		
 		System.out.println(un);
 		System.out.println(pwd);
